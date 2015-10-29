@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("Hk", "for Hk support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("Hk", "enable Hk support", "no");
+
+if (PHP_HK != "no") {
+	EXTENSION("Hk", "Hk.c");
+}
+
